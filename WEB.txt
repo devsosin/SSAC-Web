@@ -1,0 +1,44 @@
+WEB Front-End
+
+HTML5
+Web page의 구조를 잡아주는 Hypertext Markup Language
+
+Tags
+<!DOCTYPE html>
+<html>
+<body>
+<h1> to <h6> - Heading
+<p style="property:value;" title="name">
+style - font-size:60px; color:red;
+<pre> - 쓴대로 출력
+<a href="URL" target="_self", _bland, _parent, _top>
+
+인용
+<blockquote cite="인용한 URL">
+<q> - "(쌍따옴표)가 자동으로 생성
+<cite> - 기울임
+
+<table> - https://www.tablesgenerator.com/html_tables (table generator)
+<th> <tr> <td> rowspan="2"
+
+<ul> <ol> <li> <dl> <dt> <dd> - List
+
+<div> - Block-level
+<span> - Inline
+Inline은 Block-level 요소 포함 X
+
+Nested - 중첩된
+
+Empty - 종료 태그가 없는 태그
+<br/> <hr/> - 수평선
+<img src="image" width="500" height="600" alt="대체 내용">
+
+<!-- 주석 -->
+
+★ HTML 기준을 잡는다 - 왜? 설명 (TAG에 의미 부여)
+Semantic Markup - Outline 구조 잘 잡기
+
+<video width="" height=""> controls - 동영상 버튼들, autoplay - 자동재생
+<source src="" type="video/mp4, ogg, webm">
+
+<input type="text" placeholder="email" readonly/>
