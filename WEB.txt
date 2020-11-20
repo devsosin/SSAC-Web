@@ -42,3 +42,25 @@ Semantic Markup - Outline 구조 잘 잡기
 <source src="" type="video/mp4, ogg, webm">
 
 <input type="text" placeholder="email" readonly/>
+
+CSS
+화면을 꾸미는 Cascading Style Sheet
+OOCSS - 하나하나 모두 대상화 
+Sass
+.gnb{}
+.gnb-list{}
+.gnb-list-item{}
+
+.gnb{
+    /* gnb style */
+
+    &-list{
+        /* gnb list style */
+
+        &-item{
+            /* gnb list item style */
+        }
+    }
+}
+
+디자인툴에서의 자간과 CSS의 letter-spacing 단위 매핑시키는 방법

@@ -1,0 +1,27 @@
+.box{
+    height: 50px;
+    background-color: skyblue;
+    margin-bottom: 10px;
+}
+
+.auto-box{
+    width: 100%;
+}
+
+.px-box{
+    width: 200px;
+}
+
+.percent-box{
+    width: 50%;
+}
+
+/* 
+    - width 값을 auto로 설정하는 것은 width 속성을 적용하지 않는것과 width를 100%로 설정하는 것과 같다.
+    
+    - block 요소의 width 속성은 parent element의 100%로 채워짐 (기본값)
+    - block 요소의 % 단위를 사용하면 parent element 기준 길이 결정
+
+    - inline 요소에 width 속성은 적용되지 않음
+    - inline 요소의 가로길이는 자식요소를 기준으로 결정
+*/

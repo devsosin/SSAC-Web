@@ -1,0 +1,70 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1{
+    font-size: 24px;
+    /* 폰트 굵기 : 400(regular), 700(bold) */
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+a{
+    text-decoration: none;
+    /* #FFAA66 => #FA6 */
+    color: black;
+}
+
+a:link{
+    color: #27d424;
+}
+a:visited{
+    color: #27d424;
+}
+a:hover{
+    /* text-decoration: underline; */
+    border-bottom: 1px solid #27d424;
+}
+a:active{
+    background-color: #028b00;
+}
+
+p{
+    font-size: 14px;
+    text-align: justify;
+    /* 줄 높이 : 폰트 사이즈 + x 픽셀 */
+    /* 배수의 형태 = 폰트 사이즈 * x 배 */
+    line-height: 1.6;
+    white-space: nowrap;
+}
+
+li{
+    line-height: 1.6;
+    text-indent: 20px;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    line-height: 3;
+}
+
+h3{
+    line-height: 3;
+}
+
+h4{
+    font-style: italic;
+    line-height: 3;
+}
+
+table{
+    border-collapse: collapse;
+    border : 1px solid red;
+}
+th, td{
+    border: 1px solid red;
+    text-align: center;
+    vertical-align: middle;
+}
