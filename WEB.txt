@@ -64,3 +64,8 @@ Sass
 }
 
 디자인툴에서의 자간과 CSS의 letter-spacing 단위 매핑시키는 방법
+
+display 속성 - block, inline 요소로 구분
+요소 성격을 변경 block -> inline / inline -> block
+display: block; / display: inline; / display: inline-block; / display: none;
+

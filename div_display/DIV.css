@@ -1,0 +1,141 @@
+/* width height */
+.box{
+    height: 50px;
+    background-color: skyblue;
+    margin-bottom: 10px;
+}
+
+.auto-box{
+    width: auto /* 100% */;
+}
+
+.px-box{
+    width: 200px;
+}
+
+.percent-box{
+    width: 50%;
+}
+
+/* 
+    - width 값을 auto로 설정하는 것은 width 속성을 적용하지 않는것과 width를 100%로 설정하는 것과 같다.
+    
+    - block 요소의 width 속성은 parent element의 100%로 채워짐 
+        : 기본값 = width:auto = 정하지 않는 경우 = width 100%
+    - block 요소의 % 단위를 사용하면 parent element 기준 길이 결정
+
+    - inline 요소에 width 속성은 적용되지 않음
+    - inline 요소의 가로길이는 자식요소를 기준으로 결정
+*/
+
+.padding-parent{
+    background-color: pink;
+}
+
+.padding-child1{
+    padding-top: 30px;
+    margin-right: 20px;
+    border: 1px solid red;
+}
+
+.padding-child2{
+    padding: 10px 20px 30px;
+    margin: 10px 20px 30px 40px;
+    border: 1px solid red;
+}
+
+.margin-parent{
+    background: yellowgreen;
+    /* margin: 5px; - 위아래 영향 없음 */
+    /* border: 1px solid red; - 위아래 채워짐 */ 
+    /* padding: 50px; - 위아래 채워짐 */
+    border: 1px solid transparent;
+    
+    /* 
+    자식요소에 margin을 적용하는 경우 
+    margin collapse 현상이 발생할 수 있는데,
+    1. 부모요소에 padding 적용
+    2. 부모요소에 border를 transparent 적용 
+    */
+}
+
+.margin-child{
+    width: 200px;
+    height: 100px;
+    border: 1px solid red;
+    margin: 50px;
+}
+
+/* 
+마진 상쇄 큰 쪽의 마진만 적용되고 작은쪽 마진은 적용 X
+값이 같을 때(20px 20px)에는 40px로 적용 
+*/
+
+.bg{
+    width: 600px;
+    height: 500px;
+    border: 1px solid orange;
+}
+
+.bg-1{
+    background-color: skyblue;
+}
+
+.bg-2{
+    background-image: url("https://images.chosun.com/resizer/k6L-J7LOYHpzi7J0o6f-LAfbtVw=/464x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/RWXHN2ZUBBXGLLFHBULDVSWBAA.jpg");
+}
+
+.bg-3{
+    background-image: url("https://images.chosun.com/resizer/k6L-J7LOYHpzi7J0o6f-LAfbtVw=/464x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/RWXHN2ZUBBXGLLFHBULDVSWBAA.jpg");
+    background-repeat: repeat-y;
+    /* 
+    repeat-x : 가로방향만 반복
+    repeat-y : 세로방향만 반복
+    no-repeat : 반복 안함 
+    */
+    height: 900px;
+}
+
+.bg-4{
+    background-image: url("https://images.chosun.com/resizer/k6L-J7LOYHpzi7J0o6f-LAfbtVw=/464x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/RWXHN2ZUBBXGLLFHBULDVSWBAA.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    /* 
+    키워드 : left center right / top center bottom 세로방향 가운데도 center 
+    숫자 : background-position: 가로 세로;
+    */
+    
+}
+
+.bg-5{
+    background-image: url("https://images.chosun.com/resizer/k6L-J7LOYHpzi7J0o6f-LAfbtVw=/464x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/RWXHN2ZUBBXGLLFHBULDVSWBAA.jpg");
+    background-repeat: no-repeat;
+    /* background-position: center bottom; */
+    background-attachment: fixed;
+    /*
+    background-attachment 기준 : body
+    특정 영역에 적용한 경우 특정영역 스크롤시 고정된 이미지가 보이게됨.
+    */
+}
+
+.box-size{
+    /* 
+    박스의 가로/세로 전체 크기가 각각 200px이 되도록 설정
+    안쪽 여백 각 20px, 테두리를 각 1px, 바깥 여백 각 10px 적용
+    */
+
+    width: 158px;
+    height: 158px;
+    /* margin: 10px; */
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.box-size2{
+    width: 200px;
+    height: 200px;
+    /* margin: 10px; */
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}

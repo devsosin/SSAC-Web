@@ -1,0 +1,62 @@
+.parent1{
+    border:1px solid red;
+    
+}
+
+.child1-1{
+    width: 100px;
+    height: 50px;
+    background: skyblue;
+    float: left;
+}
+
+.child1-2{
+    width: 100px;
+    height: 50px;
+    background: greenyellow;
+    float: left;
+}
+
+.clearbox{
+    clear: both;
+}
+
+.child1-3{
+    width: 100px;
+    height: 80px;
+    background: palevioletred;
+    clear: both;
+    margin-top: 20px;
+}
+
+.parent2{
+    border:1px solid red;
+}
+
+.sub-parent2{
+    float: right;
+}
+
+.child2-1{
+    width: 100px;
+    height: 50px;
+    background: yellowgreen;
+    float: left;
+}
+
+.child2-2{
+    width: 100px;
+    height: 50px;
+    background: blueviolet;
+    float: left;
+}
+
+.clearfix{
+    border:1px solid magenta;
+}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
