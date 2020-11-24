@@ -1,0 +1,34 @@
+pre{
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.parent{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.child.child2{
+    
+    background-color: yellowgreen;
+}
+
+.child{
+    width: 100px;
+    height: 50px;
+    border: 1px solid red;
+    background-color: skyblue;
+}
+
+.child1{
+    width: 100px;
+    height: 50px;
+
+    border-color: blue;
+}
+
+/* a 태그에는 color 속성이 상속되지 않음 */
+a:link{
+    color:green;
+}

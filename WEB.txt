@@ -69,3 +69,18 @@ display 속성 - block, inline 요소로 구분
 요소 성격을 변경 block -> inline / inline -> block
 display: block; / display: inline; / display: inline-block; / display: none;
 
+pseudo class (콜론 한개)
+:active - 활성화 기본
+:checked - 체크상태
+:disabled - 비활성화
+:focus - 마우스가 영역안에 들어가있을 때
+:first-child - 요소선택 
+:last-child - 요소선택
+:nth-child(n) - n번째 요소 선택
+:link - 링크 기본
+:hover - 마우스가 닿았을 때
+:visited - 방문한 상태
+
+pseudo element (콜론 두개)
+::after - 
+::before - 

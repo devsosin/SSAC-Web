@@ -1,0 +1,17 @@
+body{
+    background-image: url("https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png");
+}
+
+.opacity-box{
+    width: 300px;
+    height: 200px;
+    background: skyblue;
+    opacity: 0.5;
+}
+
+.alpha-box{
+    width: 300px;
+    height: 200px;
+    /* background: yellowgreen; */
+    background-color:rgba(154,205,50,0.7);
+}

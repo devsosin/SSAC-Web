@@ -1,0 +1,61 @@
+.element:hover{
+    background: yellow;
+}
+
+.element{
+    /* margin-top: 50px; */
+    margin-bottom: 50px;
+}
+
+.element:first-child{
+    color: teal;
+    /* margin-top: 0px; */
+}
+
+.element:last-child{
+    margin-bottom: 0px;
+}
+
+div:nth-child(3){
+    color: blue;
+}
+
+.element:nth-child(2n+1){
+    border: 1px solid pink;
+}
+
+.input-box:focus{
+    background: grey;
+    outline: none;
+    border: 1px solid red;
+}
+
+.icon-list *{
+    margin: 0;
+    padding: 0;
+}
+
+.icon-list{
+    width: 250px;
+    text-align: center;
+}
+
+.icon-list:before{
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url("https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png");
+    background-size: 100px 100px;
+    margin-bottom: 20px;
+}
+
+.icon-list-title{
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.icon-list-desc{
+    text-align: center;
+}
