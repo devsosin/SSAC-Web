@@ -1,0 +1,125 @@
+.header{
+    background: transparent;
+    position: absolute;
+    top: 40;
+    left: 0;
+    width: 100%; /* position: absolute 적용시 width는 자식요소에 맞춰짐 */
+    line-height: auto;
+}
+
+.container{
+    width: 1340px;
+    margin: 0 auto; /* 브라우저 가운데 배치 */
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 178px;
+    height: 24px;
+    text-indent: -1e9em;
+    background: url(../src/logo.png) no-repeat;
+}
+
+.gnb{
+    display: flex;
+}
+
+.gnb-list{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gnb-list-link, .gnb-util-link{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-btn{
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 46px;
+    text-decoration: none;
+}
+
+.gnb-util-link{
+    width: 100px;
+    height: 40px;
+    display: block;
+    border: 1px solid #fff;
+    margin-left: 20px;
+    border-radius: 25px;
+    line-height: 40px;
+}
+
+.content1{
+    width: 100%;
+    height: 1080px;
+    background: url(../src/content1_bg.png) no-repeat center top;
+    background-size: cover;
+    text-align: center;
+    padding-top: 300px;
+}
+/* 
+inline, inline-block 요소는 text-align이 적용됨(텍스트 요소와 같게 작동)
+ */
+.heading-type1{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.text-desc{
+    color: #5e6372;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.mt10{
+    margin-top: 10px;
+}
+
+.text-desc.text-white{
+    color: white;
+}
+
+.opacity50{
+    opacity: 0.5;
+}
+
+.scroll-down{
+    display: block;
+    width: 75px;
+    height: 75px;
+    text-indent: -1e9em;
+    background: url(../src/scroll_down.gif) no-repeat;
+    background-size: cover;
+    margin: 380px auto 0;
+}
+
+.link-white{
+    background: white;
+    color: #d32721;
+}
+
+.link-alpha{
+    border: 1px solid white;
+    color: white;
+}
+
+.content1-link{
+    margin-top: 55px;
+}
+
+.mr20{
+    margin-right: 20px;
+}

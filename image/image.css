@@ -1,0 +1,18 @@
+pre{
+    font-size: 16px;
+}
+
+.ir{
+    width: 200px;
+    height: 200px;
+    text-indent: -1e9em;
+    background: url("https://img4.yna.co.kr/etc/inner/KR/2019/06/03/AKR20190603122400009_01_i_P2.jpg") no-repeat;
+}
+
+.chart{
+    width: 900px;
+    height: 503px;
+    text-indent: -1e9em;
+    list-style: none;
+    background: url("https://lh3.googleusercontent.com/proxy/KWi6uWS0k2K7uBcl0NBcYWskhgm2N5HcwahQeQLmF0nSNAenA6Wo6unnL0sQu-jqS10ptrBcdIuElryvPX1r8cgwvqt_T5Wc510OpJhjCM346q50YqoPRw") no-repeat;
+}
