@@ -1,10 +1,12 @@
 .header{
     background: transparent;
     position: absolute;
-    top: 40;
+    top: 50px;
     left: 0;
     width: 100%; /* position: absolute 적용시 width는 자식요소에 맞춰짐 */
     line-height: auto;
+    position: absolute;
+    z-index: 1e9;
 }
 
 .container{
@@ -15,6 +17,7 @@
 .flex-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo{
@@ -26,6 +29,7 @@
 
 .gnb{
     display: flex;
+    align-items: center;
 }
 
 .gnb-list{
@@ -55,7 +59,7 @@
     width: 100px;
     height: 40px;
     display: block;
-    border: 1px solid #fff;
+    border: 1px solid #ffffffaa;
     margin-left: 20px;
     border-radius: 25px;
     line-height: 40px;
@@ -67,7 +71,7 @@
     background: url(../src/content1_bg.png) no-repeat center top;
     background-size: cover;
     text-align: center;
-    padding-top: 300px;
+    padding-top: 320px;
 }
 /* 
 inline, inline-block 요소는 text-align이 적용됨(텍스트 요소와 같게 작동)
@@ -81,7 +85,7 @@ inline, inline-block 요소는 text-align이 적용됨(텍스트 요소와 같�
 .text-desc{
     color: #5e6372;
     font-size: 16px;
-    line-height: 2;
+    line-height: 30px;
 }
 
 .mt10{
@@ -103,7 +107,7 @@ inline, inline-block 요소는 text-align이 적용됨(텍스트 요소와 같�
     text-indent: -1e9em;
     background: url(../src/scroll_down.gif) no-repeat;
     background-size: cover;
-    margin: 380px auto 0;
+    margin: 300px auto 0;
 }
 
 .link-white{
@@ -122,4 +126,538 @@ inline, inline-block 요소는 text-align이 적용됨(텍스트 요소와 같�
 
 .mr20{
     margin-right: 20px;
+}
+
+.icon-list-tit{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 60px 0 20px 0;
+}
+
+.content2{
+    padding-top: 120px;
+    background-color: #f6f6f6;
+    background-size: cover;
+}
+
+.content2-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-list:before{
+    content:"";
+    display: inline-block;
+    margin-top: 60px;
+}
+
+.icon-list{
+    text-align: center;
+    line-height: 2;
+    padding: 0 55px;
+}
+
+.icon-list:nth-child(1){
+/* .icon-list1 */
+    background-size: 120px 120px;
+    background: url(../src/icon1.png) no-repeat center top;
+}
+
+.icon-list2{
+    background-size: 120px 120px;
+    background: url(../src/icon2.png) no-repeat center top;
+}
+
+.icon-list3{
+    background-size: 120px 120px;
+    background: url(../src/icon3.png) no-repeat center top;
+}
+
+.icon-list4{
+    background-size: 120px 120px;
+    background: url(../src/icon4.png) no-repeat center top;
+}
+
+.content2-link{
+    text-align: center;
+}
+
+.link-blue{
+    margin: 100px 0 100px 0;
+    background: #264699;
+    background: linear-gradient(-118deg, #264699aa 0%, #264699ff 100%);
+    text-decoration: none;
+    color: white;
+}
+
+.text-main{
+    line-height: 30px;
+}
+
+.text-grd{
+    background: rgb(203,0,52);
+    background: linear-gradient(75deg, rgba(203,0,52,1) 0%, rgba(224,105,0,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading-type2{
+    font-size: 40px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.width960{
+    width: 960px;
+}
+
+.width800{
+    width: 800px;
+}
+
+.content3-text{
+    margin-bottom: 48px;
+}
+
+.circle-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 390px;
+    /* width: 960px; */
+}
+
+.circle-list-item{
+    position: relative;
+    width: 460px;
+    height: 80px;
+    line-height: 24px;
+    padding-left: 80px;
+    font-size: 14px;
+    color: #a7acbc;
+    /* float: left; */
+    padding-right: 30px;
+    margin-bottom: 50px;
+}
+
+.circle-list-number{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #c6cde0;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #3f4e76;
+    text-align: center;
+    line-height: 50px; /* 세로방향 가운데 정렬 */
+    position: absolute;
+    left: 0px;
+}
+
+.content3{
+    display: block;
+    height: 670px;
+    padding-top: 120px;
+    background: url(../src/content3_bg.png) no-repeat;
+    background-size: 828px 560px;
+    background-position: center right;
+}
+
+.content4{
+    display: flex;
+    width: 100%;
+    height: 640px;
+    background-color: #f6f6f6;
+}
+
+.content4-image{
+    width: 50%;
+    height: 640px;
+    /* background: url(../src/content4_img.png) no-repeat 0 0; */
+    /* background-size: cover; */
+    overflow: hidden;
+    position: relative;
+}
+
+.content4-image .video{ /* Selector Selector(공백) : 자손까지 포함 */
+    /* width: 100%; */
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* transform: translate() : 현재 위치를 기준으로 이동, % 단위 사용할 경우
+    자신의 크기를 기준으로 계산 */
+}
+
+.content4-text{
+    width: 50%;
+    height: 640px;
+    padding-left: 80px;
+    /* margin-top: 180px; */
+}
+
+.content5{
+    display: flex;
+    width: 100%;
+    height: 640px;
+    background-color: #f6f6f6;
+    justify-content: flex-end;
+}
+
+.content5-image{
+    width: 50%;
+    height: 640px;
+    background: url(../src/content5_img.png) no-repeat 0 0;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+/* .content5-image .video{
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.content5-text{
+    width: 50%;
+    height: 640px;
+}
+
+.content6{
+    height: 490px;
+    background: url(../src/content6_bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.text-wrap{
+    width: 600px;
+    margin-top: 180px;
+}
+
+.mt\(60\){
+    margin-top: 60px;
+}
+
+.text-wrap.right-direction{
+    margin-right: 80px;
+    margin-left: 0;
+    float: right;
+}
+
+.content6-box{
+    text-align: center;
+    padding-top: 150px;
+}
+
+.email-form{
+    display: inline-block;
+    margin-top: 60px;
+    position: relative;
+}
+
+.email-input{
+    width: 400px;
+    padding-left: 20px;
+    color: #fffa;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #ffffff20;
+    background: rgba(255, 255, 255, 0.2);
+    padding-right: 140px;
+}
+
+.email-input::placeholder{
+    color: #fffa;
+}
+
+.email-send{
+    position: absolute;
+    width: 135px;
+    height: 50px;
+    border: none;
+    right: 0;
+}
+
+.map{
+    width: 100%;
+    height: 600px;
+    align-items: center;
+}
+
+.footer{
+    width: 100%;
+    height: 400px;
+    color: #a7acbc;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.mobile-btn{
+    display: none;
+}
+
+@media screen and (min-width:1921px){
+    .content4-image.video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:1340px){
+    .container{
+        width: auto;
+    }
+
+    .logo{
+        margin-left: 40px;
+    }
+
+    .gnb{
+        margin-right: 40px;
+    }
+
+    .content2{
+        height: auto;
+    }
+    
+    .content2-list{
+        flex-wrap: wrap;
+    }
+
+    .icon-list{
+        width: 50%;
+        padding: 40px 80px;
+    }
+
+    .content3{
+        height: auto;
+    }
+    .content3-text-desc{
+        width: 100%;
+        height: auto;
+    }
+    
+    .circle-list{
+        width: 100%;
+        height: auto;
+    }
+
+    .text-wrap{
+        width: auto;
+        margin: 0 40px 0 40px;
+    }
+    .content4{
+        height: auto;
+    }
+    .content5{
+        height: auto;
+    }
+    .content4-text{
+        margin-top: 180px;
+    }
+
+    .content5-text{
+        margin-top: 180px;
+    }
+
+    .text-wrap.right-direction{
+        padding-left: 80px;
+    }
+
+    .scroll-down{
+        margin: 300px auto 0;
+    }
+}
+
+@media screen and (max-width:760px){
+
+    .flex-container{
+        display: block;
+    }
+
+    .logo{
+        margin-bottom: 10px;
+    }
+
+    .gnb{
+        display: block;
+        height: 0;
+        overflow: hidden;
+        margin-right: 0;
+        text-align: right;
+        background: rgba(0,0,0,0.8);
+        position: relative;
+        transition: height 0.5s ease-out; /* 특정 속성을 애니메이션으로 구현 가능 */
+    }
+
+    .gnb.active{
+        height: 280px;
+    }
+
+    .gnb:before, .gnb:after{
+        display: block;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: white;
+    }
+
+    .gnb:before{
+        margin-bottom: 20px;
+    }
+    
+    .gnb:after{
+        position: absolute;
+        bottom: 0;
+        /* margin-top: 20px; */
+    }
+
+    .gnb-list{
+        display: block;
+        width: auto;
+        line-height: 2;
+    }
+
+    .gnb-list-item{
+        padding-right: 20px;
+    }
+
+    .gnb-util-link{
+        display: inline-block;
+    }
+
+    .content1-text-tit{
+        padding-top: 10px;
+    }
+
+    .link-btn{
+        margin-bottom: 0;
+    }
+
+    .header{
+        top: 30px;
+    }
+
+    .mobile-btn{
+        display: block;
+        border: none;
+        background: none;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        text-indent: -1e9em;
+    }
+
+    .mobile-btn:before,
+    .mobile-btn:after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: white;
+    }
+
+    .mobile-btn > span{
+        display: block;
+        text-indent: -1e9em;
+    }
+
+    .icon-list{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .link-blue{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .circle-list-item{
+        width: auto;
+    }
+
+
+    .text-wrap{
+        margin: 0;
+    }
+    .content3{
+        background-position: top right;
+        background-size: 207px 140px;
+        padding: 20px 10px;
+    }
+
+    .content4{
+        flex-wrap: wrap;
+        /* height: auto; */
+    }
+    .content5{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    
+    .content4-image, .content5-image{
+        display: inline-block;
+        background-size: cover;
+        width: 100%;
+    }
+    
+    .content4-text, .content5-text{
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        height: auto;
+    }
+    .text-wrap.right-direction{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text-wrap{
+        text-align: center;
+    }
+
+    .email-input{
+        width: 90%;
+    }
+    .email-send{
+        right: 10px;
+    }
+
+    .footer{
+        height: 200px;
+    }
+
+    .content1-link{
+        margin-top: 20px;
+    }
+
+    .link-btn{
+        margin: 10px;
+    }
+
+    .scroll-down{
+        margin: 40px auto 0;
+    }
+
+    /* 버튼클릭시 크기 조정 어케되는지? */
+    .content1{
+        height: 700px;
+        padding-top: 150px;
+    }
+
+    .content2{
+        padding: 50px 0;
+    }
 }

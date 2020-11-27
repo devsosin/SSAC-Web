@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>Drone Zone</title>
+
+    <!-- Library -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
+    <script src="../js/lib/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../css/swiper-bundle.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <script src="../js/lib/swiper-bundle.js"></script>
+    <script src="../js/lib/swiper-bundle.min.js"></script>
+
     <!-- Page CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/function.js"></script>
 </head>
 <body>
     <header class="header">
@@ -26,92 +35,165 @@
                 <!-- <button type="button" class="btn-nofill">Contact</button> -->
                 <a href="#" class="link-btn gnb-util-link">Contact</a>
             </nav>
+            <button type="button" class="mobile-btn"><span>menu</span></button>
         </div>
     </header>
 
     <section class="content1">
-        <div class="content1-text">
-            <h2 class="content1-text-tit heading-type1">Film your event with us!</h2>
-            <p class="content1-text-desc text-desc text-white opacity50 mt10">
-                Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo.<br/>
-                Nunc vel nibh tempor, pharetra lectus congue, luctus orci.
-            </p>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content1-text">
+                        <h2 class="content1-text-tit heading-type1">Film your event with us!</h2>
+                        <p class="content1-text-desc text-desc text-white opacity50 mt10">
+                            Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo.<br/>
+                            Nunc vel nibh tempor, pharetra lectus congue, luctus orci.
+                        </p>
+                    </div>
+                    <div class="content1-link">
+                        <a href="#ask" class="link-btn link-white mr20">Ask for price</a>
+                        <a href="#video" class="link-btn link-alpha">Watch video</a>
+                    </div>
+                    <div class="scroll-down">아래로 스크롤 해주세요.</div>                    
+                </div>
+                <div class="swiper-slide">
+                    <div class="content1-text">
+                        <h2 class="content1-text-tit heading-type1">Film your event with us!</h2>
+                        <p class="content1-text-desc text-desc text-white opacity50 mt10">
+                            Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo.<br/>
+                            Nunc vel nibh tempor, pharetra lectus congue, luctus orci.
+                        </p>
+                    </div>
+                    <div class="content1-link">
+                        <a href="#ask" class="link-btn link-white mr20">Ask for price</a>
+                        <a href="#video" class="link-btn link-alpha">Watch video</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content1-text">
+                        <h2 class="content1-text-tit heading-type1">Film your event with us!</h2>
+                        <p class="content1-text-desc text-desc text-white opacity50 mt10">
+                            Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo.<br/>
+                            Nunc vel nibh tempor, pharetra lectus congue, luctus orci.
+                        </p>
+                    </div>
+                    <div class="content1-link">
+                        <a href="#ask" class="link-btn link-white mr20">Ask for price</a>
+                        <a href="#video" class="link-btn link-alpha">Watch video</a>
+                    </div>
+        
+                </div>
+                <div class="swiper-slide">
+                    <div class="content1-text">
+                        <h2 class="content1-text-tit heading-type1">Film your event with us!</h2>
+                        <p class="content1-text-desc text-desc text-white opacity50 mt10">
+                            Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo.<br/>
+                            Nunc vel nibh tempor, pharetra lectus congue, luctus orci.
+                        </p>
+                    </div>
+                    <div class="content1-link">
+                        <a href="#ask" class="link-btn link-white mr20">Ask for price</a>
+                        <a href="#video" class="link-btn link-alpha">Watch video</a>
+                    </div>
+        
+                </div>
+            </div>
         </div>
+        
+        <!-- Swiper JS -->
+        <script src="../package/swiper-bundle.min.js"></script>
 
-        <div class="content1-link">
-            <a href="#ask" class="link-btn link-white mr20">Ask for price</a>
-            <a href="#video" class="link-btn link-alpha">Watch video</a>
-        </div>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                loop:true
+            });
+        </script>
 
-        <div class="scroll-down">아래로 스크롤 해주세요.</div>
     </section>
 
     <section class="content2">
-        <div class="content2-list">
-            <dl class="icon-list">
-                <dt class="icon-list-title text-grd">From air</dt>
-                <dd class="icon-list-desc text-main">Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo.</dd>
-            </dl>
-            <dl class="icon-list">
-                <dt class="icon-list-title text-grd">Best drones</dt>
-                <dd class="icon-list-desc text-main">Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo.</dd>
-            </dl>
-            <dl class="icon-list">
-                <dt class="icon-list-title text-grd">Speed</dt>
-                <dd class="icon-list-desc text-main">Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo.</dd>
-            </dl>
-            <dl class="icon-list">
-                <dt class="icon-list-title text-grd">Long range</dt>
-                <dd class="icon-list-desc text-main">Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo.</dd>
-            </dl>
+        <div class="container">
+            <div class="content2-list clearfix">
+                <dl class="icon-list icon-list1">
+                    <dt class="icon-list-tit text-grd">From air</dt>
+                    <dd class="icon-list-desc text-main">Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo.</dd>
+                </dl>
+                <dl class="icon-list icon-list2">
+                    <dt class="icon-list-tit text-grd">Best drones</dt>
+                    <dd class="icon-list-desc text-main">Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo.</dd>
+                </dl>
+                <dl class="icon-list icon-list3">
+                    <dt class="icon-list-tit text-grd">Speed</dt>
+                    <dd class="icon-list-desc text-main">Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo.</dd>
+                </dl>
+                <dl class="icon-list icon-list4">
+                    <dt class="icon-list-tit text-grd">Long range</dt>
+                    <dd class="icon-list-desc text-main">Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo.</dd>
+                </dl>
+            </div>
+            <div class="content2-link">
+                <a href="#" class="link-btn link-blue">Ask for price</a>
+            </div>
         </div>
-        <a href="#" class="link-btn type-blue">Ask for price</a>
     </section>
 
     <section class="content3">
-        <div class="content3-text">
-            <h2 class="content3-text-tit heading-type2 text-grd">Nature from the air</h2>
-            <p class="content3-text-desc text-main">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio recusandae ut ea eum blanditiis! Distinctio aut labore nam expedita quibusdam, fuga et sunt voluptatem nisi ad autem sapiente incidunt. Eius!</p>
-        </div>
-        <div class="content3-list">
-            <ol class="circle-list">
-                <li class="circle-list-item">
-                    <span class="circle-list-number">1</span>
-                    Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo. Nunc vel nibh tempor, pharetra lectus congue, luctus orci.</li>
-                <li class="circle-list-item">
-                    <span class="circle-list-number">2</span>
-                    Mauris consequat libero metus, nec ultricies sem efficitur quis. Integer bibendum eget metus ac accumsan.</li>
-                <li class="circle-list-item">
-                    <span class="circle-list-number">3</span>
-                    Integer sit amet lacus egestas, semper est quis, viverra ex. Mauris consequat libero metus, nec ultricies sem efficitur quis.</li>
-                <li class="circle-list-item">
-                    <span class="circle-list-number">4</span>
-                    Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo. Nunc vel nibh tempor, pharetra lectus congue, luctus orci.</li>
-                <li class="circle-list-item">
-                    <span class="circle-list-number">5</span>
-                    Mauris consequat libero metus, nec ultricies sem efficitur quis. Integer bibendum eget metus ac accumsan.</li>
-            </ol>
+        <div class="container">
+            <div class="content3-text">
+                <h2 class="content3-text-tit heading-type2 text-grd">Nature from the air</h2>
+                <p class="content3-text-desc text-main width800">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio recusandae ut ea eum blanditiis! Distinctio aut labore nam expedita quibusdam, fuga et sunt voluptatem nisi ad autem sapiente incidunt. Eius!</p>
+            </div>
+            <div class="content3-list">
+                <ol class="circle-list width960">
+                    <li class="circle-list-item">
+                        <span class="circle-list-number">1</span>
+                        Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo. Nunc vel nibh tempor, pharetra lectus congue, luctus orci.</li>
+                    <li class="circle-list-item">
+                        <span class="circle-list-number">2</span>
+                        Mauris consequat libero metus, nec ultricies sem efficitur quis. Integer bibendum eget metus ac accumsan.</li>
+                    <li class="circle-list-item">
+                        <span class="circle-list-number">3</span>
+                        Integer sit amet lacus egestas, semper est quis, viverra ex. Mauris consequat libero metus, nec ultricies sem efficitur quis.</li>
+                    <li class="circle-list-item">
+                        <span class="circle-list-number">4</span>
+                        Pellentesque eget nunc sit amet urna ullamcorper fermentum et eu leo. Nunc vel nibh tempor, pharetra lectus congue, luctus orci.</li>
+                    <li class="circle-list-item">
+                        <span class="circle-list-number">5</span>
+                        Mauris consequat libero metus, nec ultricies sem efficitur quis. Integer bibendum eget metus ac accumsan.</li>
+                </ol>
+            </div>
         </div>
     </section>
 
     <section class="content4">
-        <div class="content4-text">
-            <h2 class="heading-type2">Nature from the air</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus distinctio, obcaecati exercitationem, ipsam aspernatur quis voluptates similique ipsum suscipit quod quae ducimus nobis repudiandae tempore. Suscipit praesentium atque accusamus.</p>
+        <div class="content4-image">
+            <video class="video" autoplay muted loop>
+                <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+            </video>
         </div>
-        <div class="content4-link-video">
-            <a href=""><img src="" alt=""/></a>
+        <div class="content4-text">
+            <div class="text-wrap">
+                <h2 class="heading-type2 text-grd">Nature from the air</h2>
+                <p class="text-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus distinctio, obcaecati exercitationem, ipsam aspernatur quis voluptates similique ipsum suscipit quod quae ducimus nobis repudiandae tempore. Suscipit praesentium atque accusamus.</p>
+                <a href="#" class="link-btn link-blue mt(60)">Ask for price</a>
+            </div>
         </div>
     </section>
 
     <section class="content5">
         <div class="content5-text">
-            <h2 class="heading-type2">City from the air</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, dolor provident, magnam accusantium sunt voluptas excepturi officiis asperiores, voluptatem maxime molestias pariatur natus deleniti nisi at iure praesentium sint architecto!</p>
-            <a href="#" class="link-btn type-blue">Ask for price</a>
+            <div class="text-wrap right-direction">
+                <h2 class="heading-type2 text-grd">City from the air</h2>
+                <p class="text-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, dolor provident, magnam accusantium sunt voluptas excepturi officiis asperiores, voluptatem maxime molestias pariatur natus deleniti nisi at iure praesentium sint architecto!</p>
+                <a href="#" class="link-btn link-blue mt(60)">Ask for price</a>
+            </div>
         </div>
-        <div class="content5-link-video">
-            <a href=""><img src="" alt=""></a>
+        <div class="content5-image">            
+            <!-- <video class="video" autoplay muted loop> -->
+                <!-- <source src="../src/rain.mp4" type="video/mp4"> -->
+            </video>
         </div>
     </section>
 
@@ -119,19 +201,20 @@
         <div class="content6-box">
             <h2 class="heading-type1">Sign up for our newsletter</h2>
             <div class="email-form">
-                <input type="text" form="Email address" class="email-input"/>
-                <input type="button" class="link-btn type-white email-send">Send</button>
+                <input type="text" placeholder="Email address" class="email-input text-desc"/>
+                <button type="button" class="link-btn link-white email-send">Send</button>
             </div>
         </div>
     </section>
 
     <section class="content7">
         <!-- google map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2085828.67506823!2d10.406651357287647!3d45.45642655824988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1606458747467!5m2!1sko!2skr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map"></iframe>
     </section>
 
     <footer class="footer">
         <address class="address">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</address>
-        <div>Try awsome tool for desgners symu.co &copy; All right reserved.</div>
+        <div>Try awsome tool for desgners <span class="bold">symu.co</span> &copy; All right reserved.</div>
     </footer>
 </body>
 </html>
