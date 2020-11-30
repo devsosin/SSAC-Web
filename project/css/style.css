@@ -498,6 +498,7 @@ inline, inline-block 요소는 text-align이 적용됨(텍스트 요소와 같�
         background: rgba(0,0,0,0.8);
         position: relative;
         transition: height 0.5s ease-out; /* 특정 속성을 애니메이션으로 구현 가능 */
+        z-index: 10;
     }
 
     .gnb.active{
@@ -631,9 +632,6 @@ inline, inline-block 요소는 text-align이 적용됨(텍스트 요소와 같�
     .email-input{
         width: 90%;
     }
-    .email-send{
-        right: 10px;
-    }
 
     .footer{
         height: 200px;
@@ -647,6 +645,11 @@ inline, inline-block 요소는 text-align이 적용됨(텍스트 요소와 같�
         margin: 10px;
     }
 
+    .email-send{
+        right: 10px;
+        margin: 0px 10px 0 10px;
+    }
+    
     .scroll-down{
         margin: 40px auto 0;
     }
